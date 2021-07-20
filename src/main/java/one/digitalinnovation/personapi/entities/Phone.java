@@ -8,11 +8,13 @@ import one.digitalinnovation.personapi.enums.PhoneType;
 
 import javax.persistence.*;
 
+@Entity
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class Phone {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
